@@ -1,3 +1,23 @@
+repo structure:
+
+This is the structure of the relevant items you may want to look at in the repo. I have organized them here. The only other documents are image files generated from running the smaller scripts. 
+
+
+Final_master_notebook
+gitignore
+README
+----notebooks
+--------classifer_ai_letters
+--------vesuvius_notebook
+--------submission
+------------letter_class
+----------------data_classifier
+--------------------train_high_resolution
+--------------------test_high_resolution
+--------------------test
+--------------------train
+
+
 # Project Description:
 
 
