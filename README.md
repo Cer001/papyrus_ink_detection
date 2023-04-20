@@ -5,17 +5,21 @@ This is the structure of the relevant items you may want to look at in the repo.
 
 #### Final_master_notebook
 
-#### gitignore
+#### Papyrus_presentation
 
 #### README
 
+#### gitignore
+
+#### submission
+
 ----notebooks
 
---------classifer_ai_letters
+--------images_output
 
 --------vesuvius_notebook
 
---------submission
+--------classifer_ai_letters
 
 ------------letter_class
 
