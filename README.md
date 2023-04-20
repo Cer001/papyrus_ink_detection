@@ -36,6 +36,9 @@ This is the structure of the relevant items you may want to look at in the repo.
 
 # Project Description:
 
+![output_image](https://user-images.githubusercontent.com/118778732/233492202-b95b8bc1-2c96-4be8-aa24-f7b81566c0ef.jpg)
+
+
 
 ## Data source for Vesuvius Challenge: https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/overview
 
