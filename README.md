@@ -7,14 +7,23 @@ Final_master_notebook
 gitignore
 README
 ----notebooks
+
 --------classifer_ai_letters
+
 --------vesuvius_notebook
+
 --------submission
+
 ------------letter_class
+
 ----------------data_classifier
+
 --------------------train_high_resolution
+
 --------------------test_high_resolution
+
 --------------------test
+
 --------------------train
 
 
