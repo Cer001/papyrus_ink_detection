@@ -1,6 +1,6 @@
 repo structure:
 
-This is the structure of the relevant items you may want to look at in the repo. I have organized them here. The only other documents are image files generated from running the smaller scripts. 
+This is the structure of the relevant items you may want to look at in the repo. I have organized them here. The only other documents are image files generated from running the smaller scripts. For Flatiron requirements use the Final_master_notebook as my final notebook and Papyrus_presentation as my final presentation. 
 
 
 #### Final_master_notebook
