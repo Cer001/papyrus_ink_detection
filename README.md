@@ -3,9 +3,12 @@ repo structure:
 This is the structure of the relevant items you may want to look at in the repo. I have organized them here. The only other documents are image files generated from running the smaller scripts. 
 
 
-Final_master_notebook
-gitignore
-README
+#### Final_master_notebook
+
+#### gitignore
+
+#### README
+
 ----notebooks
 
 --------classifer_ai_letters
