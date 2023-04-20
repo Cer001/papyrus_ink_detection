@@ -1,4 +1,4 @@
-# papyrus_ink_detection
+# Project Description:
 
 
 ## Data source for Vesuvius Challenge: https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/overview
@@ -9,7 +9,7 @@
 
 files = 340
 
-### From the competition website:
+### From the competition website
 
 Files
 [train/test]/[fragment_id]/surface_volume/[image_id].tif slices from the 3d x-ray surface volume. Each file contains a greyscale slice in the z-direction. Each fragment contains 65 slices. Combined this image stack gives us width * height * 65 number of voxels per fragment. You can expect two fragments in the hidden test set, which together are roughly the same size as a single training fragment. The sample slices available to download in the test folders are simply copied from training fragment one, but when you submit your notebook they will be substituted with the real test data.
@@ -37,7 +37,7 @@ files =
     
     test = 96
 
-### From the website:
+### From the website
 
 Content
 The training dataset consists of 240 images of Greek letters (10 for each letter). The test dataset consists of 96 images (4 for each letter). We provide both the grayscale original high-resolution images in 2 zip files (train and test) and the low-resolution images (14x14 pixels) used for the classification in another 2 zip files (train and test). Finally, matrices that correspond to each low-resolution (14x14) image are given in 2 .csv files (train and test). Numbers in cells represent the grayscale intensities.
@@ -65,9 +65,9 @@ Grayscale intensities- with 96 rows/data, 196 columns/features, column 197 conta
 
 Tip: Only the .csv files are needed for the classification, the images are for illustration purposes.
 
-## Inclusion of features justification:
+## Inclusion of features justification
 
-#### Vesuvius Challenge Dataset:
+#### Vesuvius Challenge Dataset
 
 I include these 10 slices in this position in the z axis of the papyrus scrolls because according to others online who are also competing, these are the only relevant slices with enough ink worth going through. Other slices are excluded according to this code:
 
@@ -77,7 +77,7 @@ Z_DIM = 10   # Number of slices in the z direction
 
 Also, I did a lot of image processing I discuss further in the notebook and used Kuwahara versions of the raw data to train the model, decreasing training time significantly. 
 
-#### Handwritten Greek Letters Dataset:
+#### Handwritten Greek Letters Dataset
 
 I reformatted the original .csv table the data comes with to make it useable. I opted to select the high resolution images for my training data and scaled them dowm to 66 * 66 using datagen. I found a hard time teaching the network with the base model using the base 14 * 14 images. Greek letters are extremely hard to classify becuase many of them look similar or have complex forms, which is why I only used the higher resolution images for the final model. 
 
@@ -90,7 +90,7 @@ The Handwritten Greek Letters dataset has a very small number of training and te
 
 # Modeling
 
-#### Vesuvius Challenge Dataset:
+#### Vesuvius Challenge Dataset
 
 In this project I iterated improving on the base Vesuvius Challenge Model by making the network more normalized with Dropouts, Batch Normalization, MaxPooling, Dense Layers, various optimizers, and different learning rates. I added batch normalization and dropouts first, which did not work well together, followed by adding dense layers. I found that image pre-processing combined with batch normalization and only dropouts on certain layers helped the most. Adding Dense layers did not change anything. In the end our model only kept some changes, but is definetly an improvement upon the base model. I am able to generate a comparable image with 1/3 of the training time. I tried optimizers such as Adadelta, Adamax, and RMSprop but the SGD optimizer performed the best for this task.
 
