@@ -34,6 +34,9 @@ This is the structure of the relevant items you may want to look at in the repo.
 --------------------train
 
 
+![image](https://github.com/Cer001/papyrus_ink_detection/assets/118778732/2822c8a4-e281-4b4b-bf14-37c76b52de1d)
+
+
 # Project Description:
 
 ![output_image](https://user-images.githubusercontent.com/118778732/233492202-b95b8bc1-2c96-4be8-aa24-f7b81566c0ef.jpg)
