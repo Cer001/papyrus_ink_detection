@@ -34,12 +34,11 @@ This is the structure of the relevant items you may want to look at in the repo.
 --------------------train
 
 
-![image](https://github.com/Cer001/papyrus_ink_detection/assets/118778732/2822c8a4-e281-4b4b-bf14-37c76b52de1d)
 
 
 # Project Description:
 
-![output_image](https://user-images.githubusercontent.com/118778732/233492202-b95b8bc1-2c96-4be8-aa24-f7b81566c0ef.jpg)
+![image](https://github.com/Cer001/papyrus_ink_detection/assets/118778732/2822c8a4-e281-4b4b-bf14-37c76b52de1d)
 
 
 
@@ -173,5 +172,7 @@ model.add(Activation('softmax'))
 One of the first things I did was adding in 2D convolutions, which significantly helped. Once I optimized the depth and density of the network, I optimized the convoutional filters to their optimal state. The final model I created appears to score very low, but in fact was useful enough to prove my concept might work if given more time and resources. The reason it scores so low is the datagen parameters I set are very variable to the images, and distort them a lot. First I discovered my model was tuned with much less rigorous datagen parameters when it was scoring 80% roughly. Then i stopped moving the filters and optimizers, and instead make the dataset much harder for it. This worked out well in the end, as it works well enough to show that my overlay technique may be useful. I tried optimizers such as Adadelta, Adamax, and RMSprop, but Adam worked the best. 
 
 ## Conclusion
+
+![output_image](https://user-images.githubusercontent.com/118778732/233492202-b95b8bc1-2c96-4be8-aa24-f7b81566c0ef.jpg)
 
 This notebook serves as a proof of concept for some ideas worth exploring further for the Vesuvius Challenge. I demonstrate that image enhancement techniques can be applied to improve the outputs from the Ink Detection AI, improving upon the base model. I then show how a second AI can use those processed outputs to predict on live data as well and superimpose its best estimate over the original image. This can be used further to isolate intersects between sets, boost the relevant values, and then reprocessed to generate the final letter. I hope this advances the efforts of the Vesuvius Challenge Team and increases the legibility of the letters by detecting ink where it should be present in the papyrus. 
